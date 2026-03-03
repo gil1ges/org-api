@@ -24,29 +24,11 @@ REST API для управления организационной структ
 1. Скопировать этот репозиторий:
 
 ```bash
-# SSH
-git clone git@github.com:gil1ges/org-api.git
+git clone https://github.com/gil1ges/org-api.git
 cd org-api
-
-# или HTTPS
-# git clone https://github.com/gil1ges/org-api.git
-# cd org-api
 ```
 
-2. Создать `.env` в корне проекта:
-
-```bash
-cat > .env << 'EOF'
-APP_HOST=0.0.0.0
-APP_PORT=8080
-DB_HOST=localhost
-DB_PORT=15432
-DB_USER=postgres
-DB_PASSWORD=postgres
-DB_NAME=org_api
-DB_SSLMODE=disable
-EOF
-```
+2. Задать переменные окружения для БД: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` (и при необходимости `DB_SSLMODE`).
 
 3. Запустить сервисы:
 
